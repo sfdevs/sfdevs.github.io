@@ -16,15 +16,14 @@ _\ \ | (_) | |_| |>  <  / / | (_| | | \__ \
 
 # TEAM
 
-    Marshall Crosby -- Designer
     Tyler Harms -- Developer
 
 # THANKS
 
-    Blend Interactive -- Design
+    TEMPLATED.co -- Design
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    jQuery, Normalize.css, Bootstrap
+    jQuery, Normalize.css
     Hugo
