@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on SFDevs</title>
-    <link>https://sfdevs.com/</link>
-    <description>Recent content in Home on SFDevs</description>
+    <title>Jobs on SFDevs</title>
+    <link>https://sfdevs.com/jobs/</link>
+    <description>Recent content in Jobs on SFDevs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Oct 2018 20:51:23 -0500</lastBuildDate>
     
-	<atom:link href="https://sfdevs.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sfdevs.com/jobs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
