@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sfdevs.com/events/visual-studio-2019-launch-259527992/</loc>
+    <lastmod>2019-03-14T10:34:56-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sfdevs.com/jobs/senior-software-engineer-1/</loc>
-    <lastmod>2019-02-04T08:22:34-06:00</lastmod>
+    <lastmod>2019-03-14T10:36:19-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://sfdevs.com/</loc>
-    <lastmod>2018-12-02T10:32:46-06:00</lastmod>
+    <lastmod>2019-03-14T10:34:56-05:00</lastmod>
   </url>
   
   <url>
@@ -25,6 +30,12 @@
   <url>
     <loc>https://sfdevs.com/jobs/submit/</loc>
     <lastmod>2019-02-04T12:46:54-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sfdevs.com/events/</loc>
+    <lastmod>2019-03-14T10:34:56-05:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
