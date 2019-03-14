@@ -7,6 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Oct 2018 20:51:23 -0500</lastBuildDate>
+    <image>
+      <url>https://sfdevs.com/jobs/images/share_jobs_400.png</url>
+      <title>SFDevs Jobs</title>
+      <link>https://sfdevs.com/jobs/</link>
+    </image>
     
         <atom:link href="https://sfdevs.com/jobs/index.xml" rel="self" type="application/rss+xml" />
     
