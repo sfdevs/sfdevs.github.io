@@ -1,35 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Jobs on SFDevs</title>
-    <link>https://sfdevs.com/jobs/</link>
-    <description>Recent Job Listings on SFDevs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 07 Oct 2018 20:51:23 -0500</lastBuildDate>
-    <image>
-      <url>https://sfdevs.com/jobs/images/share_jobs_400.png</url>
-      <title>SFDevs Jobs</title>
-      <link>https://sfdevs.com/jobs/</link>
-    </image>
-    
-        <atom:link href="https://sfdevs.com/jobs/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-        <item>
-          <title>Senior Software Engineer</title>
-          <link>https://jobs.ravenind.com/job/Sioux-Falls-Senior-Software-Engineer-SD-57104/533482100/</link>
-          <pubDate>Fri, 01 Feb 2019 15:41:23 -0600</pubDate>
-          
-          <guid>https://sfdevs.com/jobs/senior-software-engineer-533482100/</guid>
-          <description>For 60 years, Raven has developed, marketed, and produced technical solutions to great challenges. Utilizing our strength in engineering, manufacturing, and technological innovation, Raven today is a leader in precision agriculture, high performance specialty films, and situational awareness markets. Our purpose to Solve Great Challenges is bold and authentic; it keeps us grounded in markets that have meaning, provide profitable growth, and align with our values.
-Raven Applied Technology is dedicated to feeding a growing world population.</description>
-        </item>
-        
-      
-    
-  </channel>
-</rss>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jobs on SFDevs</title>
+  <link href="https://sfdevs.com/jobs/"/>
+  <updated>Fri, 01 Feb 2019 15:41:23 -0600</updated>
+  <subtitle>Recent Job Listings on SFDevs</subtitle>
+  <author>
+    <name>SFDevs</name>
+    <email>sfdevs@gmail.com</email>
+  </author>
+  <generator uri="https://gohugo.io/" version="1.0">
+    Hugo -- gohugo.io
+  </generator>
+  <icon>https://sfdevs.com/jobs/images/share_jobs_400.png</icon>
+  <logo>https://sfdevs.com/jobs/images/share_jobs.png</logo>
+  <id>https://sfdevs.com/jobs/</id>
 
+    
+      
+        
+  <entry>
+    <title>Senior Software Engineer</title>
+    <link href="https://sfdevs.com/jobs/senior-software-engineer-533482100/"/>
+    <id>https://sfdevs.com/jobs/senior-software-engineer-533482100/</id>
+    <updated>Fri, 01 Feb 2019 15:41:23 -0600</updated>
+    <summary>For 60 years, Raven has developed, marketed, and produced technical solutions to great challenges. Utilizing our strength in engineering, manufacturing, and technological innovation, Raven today is a leader in precision agriculture, high performance specialty films, and situational awareness markets. Our purpose to Solve Great Challenges is bold and authentic; it keeps us grounded in markets that have meaning, provide profitable growth, and align with our values.
+Raven Applied Technology is dedicated to feeding a growing world population.</summary>
+  </entry>
+        
+      
+    
+</feed>
