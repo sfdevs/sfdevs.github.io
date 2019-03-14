@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Jobs on SFDevs</title>
   <link href="https://sfdevs.com/jobs/"/>
-  <updated>Thu, 14 Mar 2019 16:40:00 -0500</updated>
+  <updated>Fri, 01 Feb 2019 15:41:23 -0600</updated>
   <subtitle>Recent Job Listings on SFDevs</subtitle>
   <author>
     <name>SFDevs</name>
@@ -15,18 +15,6 @@
   <logo>https://sfdevs.com/jobs/images/share_jobs.png</logo>
   <id>https://sfdevs.com/jobs/</id>
 
-    
-      
-        
-  <entry>
-    <title>Test</title>
-    <link href="https://sfdevs.com/jobs/test/"/>
-    <id>https://sfdevs.com/jobs/test/</id>
-    <updated>Thu, 14 Mar 2019 16:40:00 -0500</updated>
-    <summary>TEST</summary>
-  </entry>
-        
-      
     
       
         
