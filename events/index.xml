@@ -6,10 +6,19 @@
     <description>Recent content in Events on SFDevs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Mar 2019 08:47:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Apr 2019 14:48:47 -0500</lastBuildDate>
     
 	<atom:link href="https://sfdevs.com/events/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Advances in A.I. - Sioux Falls Tech Mingle</title>
+      <link>https://sfdevs.com/events/advances-in-ai-sioux-falls-tech-mingle/</link>
+      <pubDate>Tue, 09 Apr 2019 14:48:47 -0500</pubDate>
+      
+      <guid>https://sfdevs.com/events/advances-in-ai-sioux-falls-tech-mingle/</guid>
+      <description>Advances in Artificial Intelligence with speaker Justin Smith, Ph.D. from Sanford and host of What is AI?, and other speakers.</description>
+    </item>
     
     <item>
       <title>Visual studio 2019 launch</title>
