@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>SFDevs  | Advances in A.I. - Sioux Falls Tech Mingle</title>
+<title>SFDevs  | Fixing gnome-shell app indicators in Ubuntu</title>
 <meta name="description" content="">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -21,29 +21,32 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6cc091">
 <meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#6cc091"><meta property="og:title" content="Advances in A.I. - Sioux Falls Tech Mingle" />
-<meta property="og:description" content="Advances in Artificial Intelligence with speaker Justin Smith, Ph.D. from Sanford and host of What is AI?, and other speakers." />
+<meta name="theme-color" content="#6cc091"><meta property="og:title" content="Fixing gnome-shell app indicators in Ubuntu" />
+<meta property="og:description" content="I am a long-time gnome-shell user. I appreciate the simplicity and elegance it provides, as I prefer having a minimalist environment that still provides me easy access to the applications I use.
+That said, just as with any desktop environment, I&rsquo;ve still run into problems now and again. One that&rsquo;s been plaguing me since at least the 18.04 release is with display of app indicators, specifically those using legacy system tray APIs." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://sfdevs.com/events/advances-in-ai-sioux-falls-tech-mingle/" />
-<meta property="article:published_time" content="2019-04-09T14:48:47-05:00"/>
-<meta property="article:modified_time" content="2019-04-09T14:48:47-05:00"/>
+<meta property="og:url" content="https://sfdevs.com/posts/2019-04-02-phly-boy-phly-matthew-weier-o-phinney-fixing-gnome-shell-app-indicators-in-ubuntu/" />
+<meta property="article:published_time" content="2019-04-02T14:30:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-04-02T14:30:00&#43;00:00"/>
 
   <meta property="fb:app_id" content="1171673062996168" />
 
-<meta itemprop="name" content="Advances in A.I. - Sioux Falls Tech Mingle">
-<meta itemprop="description" content="Advances in Artificial Intelligence with speaker Justin Smith, Ph.D. from Sanford and host of What is AI?, and other speakers.">
+<meta itemprop="name" content="Fixing gnome-shell app indicators in Ubuntu">
+<meta itemprop="description" content="I am a long-time gnome-shell user. I appreciate the simplicity and elegance it provides, as I prefer having a minimalist environment that still provides me easy access to the applications I use.
+That said, just as with any desktop environment, I&rsquo;ve still run into problems now and again. One that&rsquo;s been plaguing me since at least the 18.04 release is with display of app indicators, specifically those using legacy system tray APIs.">
 
 
-<meta itemprop="datePublished" content="2019-04-09T14:48:47-05:00" />
-<meta itemprop="dateModified" content="2019-04-09T14:48:47-05:00" />
-<meta itemprop="wordCount" content="20">
+<meta itemprop="datePublished" content="2019-04-02T14:30:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-04-02T14:30:00&#43;00:00" />
+<meta itemprop="wordCount" content="215">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Advances in A.I. - Sioux Falls Tech Mingle"/>
-<meta name="twitter:description" content="Advances in Artificial Intelligence with speaker Justin Smith, Ph.D. from Sanford and host of What is AI?, and other speakers."/>
+<meta name="twitter:title" content="Fixing gnome-shell app indicators in Ubuntu"/>
+<meta name="twitter:description" content="I am a long-time gnome-shell user. I appreciate the simplicity and elegance it provides, as I prefer having a minimalist environment that still provides me easy access to the applications I use.
+That said, just as with any desktop environment, I&rsquo;ve still run into problems now and again. One that&rsquo;s been plaguing me since at least the 18.04 release is with display of app indicators, specifically those using legacy system tray APIs."/>
 <meta name="twitter:site" content="@_sfdevs"/>
 
 <script type="application/javascript">
@@ -103,10 +106,42 @@ if (!doNotTrack) {
 <section class="wrapper">
     <div class="inner">
     <header class="align-center">
-        <h1>Advances in A.I. - Sioux Falls Tech Mingle</h1>
+        <h1>Fixing gnome-shell app indicators in Ubuntu</h1>
     </header>
 
-    <p>Advances in Artificial Intelligence with speaker Justin Smith, Ph.D. from Sanford and host of <a href="https://itunes.apple.com/us/podcast/what-is-ai/id1454573693">What is AI?</a>, and <a href="https://networksiouxfalls.com/speakers">other speakers</a>.</p>
+    <p>I am a long-time <a href="https://wiki.gnome.org/Projects/GnomeShell">gnome-shell</a> user.
+I appreciate the simplicity and elegance it provides, as I prefer having a
+minimalist environment that still provides me easy access to the applications I
+use.</p>
+
+<p>That said, just as with any desktop environment, I&rsquo;ve still run into problems
+now and again. One that&rsquo;s been plaguing me since at least the 18.04 release is
+with display of app indicators, specifically those using legacy system tray
+APIs.</p>
+
+<p>Normally, gnome-shell ignores these, which is suboptimal as a number of popular
+programs still use them (including Dropbox, Nextcloud, Keybase, Shutter, and
+many others). To integrate them into Gnome, Ubuntu provides the gnome-shell
+extension &quot;kstatusnotifieritem/appindicator support&quot; (via the package
+<code>gnome-shell-extension-appindicator</code>). When enabled, they show up in your
+gnome-shell panel. Problem solved!</p>
+
+<p>Except that if you suspend your system or lock your screen, they disappear when
+you wake it up.</p>
+
+<p>Now, you can get them back by hitting <code>Alt-F2</code>, and entering <code>r</code> (for &quot;restart&quot;)
+at the prompt. But having to do that after every time you suspend or lock is
+tedious.</p>
+
+<p>Fortunately, I recently came across this gem:</p>
+
+<pre><code>$ sudo apt purge indicator-common
+
+</code></pre>
+
+<p>This removes some packages specific to Ubuntu&rsquo;s legacy Unity interface that
+interfere with how appindicators are propagated to the desktop. Once I did this,
+my appindicators persisted after all suspend/lock operations!</p>
 
     </div>
 </section>
