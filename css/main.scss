@@ -3417,13 +3417,16 @@ button {
     }
 }
 
+.blog-post-line,
 .event-line {
     padding: 1em;
-    .event-line--body {
-        p {
-            &:last-child {
-                margin-bottom: 0;
-            }
+}
+
+.blog-post-line--body,
+.event-line--body {
+    p {
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }
