@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on SFDevs</title>
+    <link>https://sfdevs.com/</link>
+    <description>Recent content in Home on SFDevs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Oct 2018 20:51:23 -0500</lastBuildDate>
+    
+	<atom:link href="https://sfdevs.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>From Zend Framework To The Laminas Project</title>
+      <link>https://sfdevs.com/posts/2019-04-17-phly-boy-phly-matthew-weier-o-phinney-from-zend-framework-to-the-laminas-project/</link>
+      <pubDate>Wed, 17 Apr 2019 16:58:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2019-04-17-phly-boy-phly-matthew-weier-o-phinney-from-zend-framework-to-the-laminas-project/</guid>
+      <description>Ten years ago this month, I was involved in a couple of huge changes for Zend Framework.
+First, I helped spearhead integration of the JavaScript library Dojo Toolkit into Zend Framework, and finalized the work that month. I&amp;rsquo;d worked closely with the two developers who had been leading that project at the time, and one thing that came up during our discussions was that they had helped create an open source foundation for the project, to ensure its continuity and longevity, and to ensure the project can outlive the ups and downs of any commercial company.</description>
+    </item>
+    
+    <item>
+      <title>How to Pass Variables to a Partial Template in Hugo</title>
+      <link>https://sfdevs.com/posts/2019-04-14-harmstyler-how-to-pass-variables-to-a-partial-template-in-hugo/</link>
+      <pubDate>Sun, 14 Apr 2019 02:05:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2019-04-14-harmstyler-how-to-pass-variables-to-a-partial-template-in-hugo/</guid>
+      <description>As a developer, I want to keep my code as DRY as is feasible for the given project. In a Hugo project, that&amp;rsquo;s where the Partial templates come in. Partials are smaller, context-aware components in your list and page templates that can be used economically to keep your templating DRY. Partials, however, have one serious limitation, they&amp;rsquo;re cached during the build of a given page (or scope). Once a partial has been created, no outside logic can adjust what the partial returns (for the page).</description>
+    </item>
+    
+    <item>
+      <title>Community blogs</title>
+      <link>https://sfdevs.com/posts/list/</link>
+      <pubDate>Sat, 13 Apr 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://sfdevs.com/posts/list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hosting Hugo on Aws Cloudfront and Route53 Using Ansible</title>
+      <link>https://sfdevs.com/posts/2019-04-12-shellrunner-hosting-hugo-on-aws-cloudfront-and-route53-using-ansible/</link>
+      <pubDate>Fri, 12 Apr 2019 16:06:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2019-04-12-shellrunner-hosting-hugo-on-aws-cloudfront-and-route53-using-ansible/</guid>
+      <description>It&amp;rsquo;s really easy to to set up a website on AWS&amp;rsquo;s s3 service, but if you want to use a certificate (you do), it&amp;rsquo;s just a bit more work. With Ansible as my hammer, everything is a nail. Here&amp;rsquo;s a quick playbook I used to set up my site jxn.is to use cloudfront. This playbook creates the bucket, sets up an s3 website in the bucket, creates a cloudfront distribution with reasonable parameters, enables an existing Certificate Manager certificate on the site, and points DNS records at the cloudfront distribution.</description>
+    </item>
+    
+    <item>
+      <title>Advances in A.I. - Sioux Falls Tech Mingle</title>
+      <link>https://sfdevs.com/events/advances-in-ai-sioux-falls-tech-mingle/</link>
+      <pubDate>Tue, 09 Apr 2019 14:48:47 -0500</pubDate>
+      
+      <guid>https://sfdevs.com/events/advances-in-ai-sioux-falls-tech-mingle/</guid>
+      <description>Advances in Artificial Intelligence with speaker Justin Smith, Ph.D. from Sanford and host of What is AI?, and other speakers.</description>
+    </item>
+    
+    <item>
+      <title>Software Engineer - Full Stack</title>
+      <link>https://sfdevs.com/jobs/software-engineer-full-stack-carsforsale-1/</link>
+      <pubDate>Wed, 03 Apr 2019 12:26:12 -0500</pubDate>
+      
+      <guid>https://sfdevs.com/jobs/software-engineer-full-stack-carsforsale-1/</guid>
+      <description>Job Description Carsforsale.com is a rapidly growing company and marketing leader in the automotive category looking to expand our Software Development Team. The Carsforsale.com team is currently concentrated on scaling web products that reach millions of car buyers and launching cutting-edge web and mobile applications. We are currently looking for highly qualified, motivated Software Developers to join this team. As Carsforsale.com continues to grow and evolve into a diversified Technology company, we want to bring the best developers available onto our team!</description>
+    </item>
+    
+    <item>
+      <title>Fixing gnome-shell app indicators in Ubuntu</title>
+      <link>https://sfdevs.com/posts/2019-04-02-phly-boy-phly-matthew-weier-o-phinney-fixing-gnome-shell-app-indicators-in-ubuntu/</link>
+      <pubDate>Tue, 02 Apr 2019 14:30:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2019-04-02-phly-boy-phly-matthew-weier-o-phinney-fixing-gnome-shell-app-indicators-in-ubuntu/</guid>
+      <description>I am a long-time gnome-shell user. I appreciate the simplicity and elegance it provides, as I prefer having a minimalist environment that still provides me easy access to the applications I use.
+That said, just as with any desktop environment, I&amp;rsquo;ve still run into problems now and again. One that&amp;rsquo;s been plaguing me since at least the 18.04 release is with display of app indicators, specifically those using legacy system tray APIs.</description>
+    </item>
+    
+    <item>
+      <title>I like Git over TFVC</title>
+      <link>https://sfdevs.com/posts/2019-03-31-aligned-dev-i-like-git-over-tfvc/</link>
+      <pubDate>Sun, 31 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2019-03-31-aligned-dev-i-like-git-over-tfvc/</guid>
+      <description>I like Git over TFVC I&amp;rsquo;ve been on a new contract and we are using TFVC here. It&amp;rsquo;s a decent tool (used to be THE tool and was much better then SourceSafe before that) for version control (you&amp;rsquo;re doing version control, right??!!), but I&amp;rsquo;ve found myself saying &amp;ldquo;Git is so much better&amp;rdquo; out loud. I do really miss Git, but I need to be careful in presenting change (I don&amp;rsquo;t want to cause angst or feelings that things can&amp;rsquo;t be changed in the developers current company.</description>
+    </item>
+    
+    <item>
+      <title>DevOps Engineer - Windows</title>
+      <link>https://sfdevs.com/jobs/devops-engineer-windows-tguymm/</link>
+      <pubDate>Fri, 15 Mar 2019 19:26:04 -0500</pubDate>
+      
+      <guid>https://sfdevs.com/jobs/devops-engineer-windows-tguymm/</guid>
+      <description>At CentralSquare, the DevOps Engineer works closely with Product, Engineering, Operations and Support teams. Individuals in this role use their system and networking knowledge to help design reliable, scalable, and cost-effective systems that meet business needs. DevOps Engineers must ensure that on-premise and hosted systems remain healthy.</description>
+    </item>
+    
+    <item>
+      <title>Software Engineer</title>
+      <link>https://sfdevs.com/jobs/software-engineer-omnitech-1/</link>
+      <pubDate>Fri, 15 Mar 2019 16:20:05 -0500</pubDate>
+      
+      <guid>https://sfdevs.com/jobs/software-engineer-omnitech-1/</guid>
+      <description>Are you a team-oriented engineer? Enthusiastic about technology? Omnitech is looking to add dedicated, eager, open-minded engineers to our Sioux Falls and Rapid City locations.
+Omnitech is a South Dakota engineering firm headquartered out of Sioux Falls South, Dakota. Established in 1998 with a passion for investing in people while creating technology solutions with a foundation of honesty and integrity. At our core, we are a team of curious software and data engineers.</description>
+    </item>
+    
+    <item>
+      <title>Sr. C#/.NET Engineer</title>
+      <link>https://sfdevs.com/jobs/sr-c-net-engineer-bkfqnm/</link>
+      <pubDate>Fri, 15 Mar 2019 14:57:39 -0500</pubDate>
+      
+      <guid>https://sfdevs.com/jobs/sr-c-net-engineer-bkfqnm/</guid>
+      <description>Summary  The Senior Software Engineer is responsible for enhancing and maintaining existing applications, troubleshooting, and resolving defects in an agile team environment. The Senior Software Engineer conducts complex work with limited supervision and a wide latitude for independent judgment. The Software Engineer must demonstrate advanced technical proficiency in his/her personal work as well as contribute to the team’s continued success by increasing his/her technical knowledge. This is sometimes a customer facing role, and the Software Engineer will communicate professionally and positively with CentralSquare clients.</description>
+    </item>
+    
+    <item>
+      <title>DevOps Engineer - Unix</title>
+      <link>https://sfdevs.com/jobs/devops-engineer-unix-pmjgvw/</link>
+      <pubDate>Thu, 14 Mar 2019 17:21:21 -0500</pubDate>
+      
+      <guid>https://sfdevs.com/jobs/devops-engineer-unix-pmjgvw/</guid>
+      <description>CentralSquare is the largest public safety software company in the world. We run solutions that provide essential public safety services to over half of North America. We want you to build and maintain solutions that make a real difference in the lives of citizens throughout the Americas improving, health, safety, and justice. This isn’t your typical sell-ads and mine-personal-data software job. Join us and make a positive difference in the world.</description>
+    </item>
+    
+    <item>
+      <title>Visual studio 2019 launch</title>
+      <link>https://sfdevs.com/events/visual-studio-2019-launch-259527992/</link>
+      <pubDate>Thu, 14 Mar 2019 08:47:56 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/events/visual-studio-2019-launch-259527992/</guid>
+      <description>Join us to go over the new features in visual studio 2019.</description>
+    </item>
+    
+    <item>
+      <title>Getting Ec2 Instance Availability Zone With Curl or Powershell</title>
+      <link>https://sfdevs.com/posts/2019-03-10-shellrunner-getting-ec2-instance-availability-zone-with-curl-or-powershell/</link>
+      <pubDate>Sun, 10 Mar 2019 15:54:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2019-03-10-shellrunner-getting-ec2-instance-availability-zone-with-curl-or-powershell/</guid>
+      <description>I&amp;rsquo;m a big fan of AWS&amp;rsquo;s SDK&amp;rsquo;s and API tools because they&amp;rsquo;re so comprehensive and easy to use, in general, but I sometimes forget that there&amp;rsquo;s another good, even simpler API for getting data from some AWS resources&amp;hellip; the magical http://169.254.169.254/ http endpoint! This endpoint provides read-only metadata about resources once you have access, and doesn&amp;rsquo;t require additional authentication. This is very handy, for instance, when a client gives me SSH or RDP access to an EC2 instance and I need to know its size, network info, or in this case what Availability Zone it is in:</description>
+    </item>
+    
+    <item>
+      <title>Contrast Ratio Calculator</title>
+      <link>https://sfdevs.com/posts/2019-02-17-harmstyler-contrast-ratio-calculator/</link>
+      <pubDate>Sun, 17 Feb 2019 17:13:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2019-02-17-harmstyler-contrast-ratio-calculator/</guid>
+      <description>Making sure webistes are accessible is a big deal these days. Websites should be mindful of their audience to make sure people with disabilities are not excluded from the site content. Color contrasts between foregrounds and backgrounds is an easy miss when checking that a site is accessible, but one that is vital to hard of sight users.</description>
+    </item>
+    
+    <item>
+      <title>I know I should be Unit Testing, but I don&#39;t know how or where to start - workshop version</title>
+      <link>https://sfdevs.com/posts/2019-02-14-aligned-dev-i-know-i-should-be-unit-testing-but-i-don-t-know-how-or-where-to-start-workshop-version/</link>
+      <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2019-02-14-aligned-dev-i-know-i-should-be-unit-testing-but-i-don-t-know-how-or-where-to-start-workshop-version/</guid>
+      <description>I know I should be Unit Testing, but I don&amp;rsquo;t know how or where to start - Basic Workshop Version I started writing about and giving presentations last year. This year, our company has decided to use that material and give a &amp;ldquo;Getting started with Unit Testing workshop&amp;rdquo;. I&amp;rsquo;ve given this 3 times now at Omnitech. Once to a pilot group, then to our normal Tuesday Lunch and Learn group, then to those who didn&amp;rsquo;t make it.</description>
+    </item>
+    
+    <item>
+      <title>Trying Out Hugo</title>
+      <link>https://sfdevs.com/posts/2019-02-08-shellrunner-trying-out-hugo/</link>
+      <pubDate>Fri, 08 Feb 2019 01:27:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2019-02-08-shellrunner-trying-out-hugo/</guid>
+      <description>I&amp;rsquo;ve been pretty heavily reorganizing and simplifying my life lately, so it was time to replace the tired old Wordpress blog at ShellRunner with something more deserving. Wordpress has been a great platform over the years, but as a constant target of attacks, it could also be a pain to keep up. Also, it&amp;rsquo;s much more fun to write my posts in Markdown, instead of in a browser editor. This is post #1 trying out Hugo, a fast static generator written in Go with a lot of features.</description>
+    </item>
+    
+    <item>
+      <title>Senior Software Engineer</title>
+      <link>https://sfdevs.com/jobs/senior-software-engineer-533482100/</link>
+      <pubDate>Fri, 01 Feb 2019 15:41:23 -0600</pubDate>
+      
+      <guid>https://sfdevs.com/jobs/senior-software-engineer-533482100/</guid>
+      <description>For 60 years, Raven has developed, marketed, and produced technical solutions to great challenges. Utilizing our strength in engineering, manufacturing, and technological innovation, Raven today is a leader in precision agriculture, high performance specialty films, and situational awareness markets. Our purpose to Solve Great Challenges is bold and authentic; it keeps us grounded in markets that have meaning, provide profitable growth, and align with our values.
+Raven Applied Technology is dedicated to feeding a growing world population.</description>
+    </item>
+    
+    <item>
+      <title>Registering Module-Specific Routes in Expressive</title>
+      <link>https://sfdevs.com/posts/2019-01-24-phly-boy-phly-matthew-weier-o-phinney-registering-module-specific-routes-in-expressive/</link>
+      <pubDate>Thu, 24 Jan 2019 17:30:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2019-01-24-phly-boy-phly-matthew-weier-o-phinney-registering-module-specific-routes-in-expressive/</guid>
+      <description>&lt;p&gt;In &lt;a href=&#34;https://getexpressive.org&#34;&gt;Expressive&lt;/a&gt;, we have standardized on a file named
+&lt;code&gt;config/routes.php&lt;/code&gt; to contain all your route registrations. A typical file
+might look something like this:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Avoiding Route Collision in eZ Platform</title>
+      <link>https://sfdevs.com/posts/2018-12-19-harmstyler-avoiding-route-collision-in-ez-platform/</link>
+      <pubDate>Wed, 19 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2018-12-19-harmstyler-avoiding-route-collision-in-ez-platform/</guid>
+      <description>eZ Platform boils down to a set of Symfony bundles that give you a nice way of managing content for your users. With these bundles, eZ reserves some routing paths for internal or admin use, paths that you might want for your own app. If you ever run across a path you want to use for your app, and not break an internal eZ feature, there is a simple solution: change the path config.</description>
+    </item>
+    
+    <item>
+      <title>Incrementally Moving to Trunk Based Development and CI - Part Two</title>
+      <link>https://sfdevs.com/posts/2018-12-07-aligned-dev-incrementally-moving-to-trunk-based-development-and-ci-part-two/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2018-12-07-aligned-dev-incrementally-moving-to-trunk-based-development-and-ci-part-two/</guid>
+      <description>Incrementally Moving to Trunk Based Development and CI - Part Two In Part One I laid out my thoughts on Trunk Based Development (TBD) and how it interacts with aspects of DevOps, Automation, Separation of concerns, Clean Architecture and more. Here are some questions you might ask, a hypothetical and resources to reference. What about X? I&amp;rsquo;m sure there are a lot of questions floating around in your head. &amp;ldquo;Why should I change my process?</description>
+    </item>
+    
+    <item>
+      <title>Creating Exception types on-the-fly in modern PHP</title>
+      <link>https://sfdevs.com/posts/2018-12-05-phly-boy-phly-matthew-weier-o-phinney-creating-exception-types-on-the-fly-in-modern-php/</link>
+      <pubDate>Wed, 05 Dec 2018 22:26:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2018-12-05-phly-boy-phly-matthew-weier-o-phinney-creating-exception-types-on-the-fly-in-modern-php/</guid>
+      <description>We pioneered a pattern for exception handling for Zend Framework back as we initially began development on version 2 around seven years ago. The pattern looks like this:
+ We would create a marker ExceptionInterface for each package. We would extend SPL exceptions and implement the package marker interface when doing so.  What this gave users was the ability to catch in three ways:
+ They could catch the most specific exception type by class name.</description>
+    </item>
+    
+    <item>
+      <title>Incrementally Moving to Trunk Based Development and CI</title>
+      <link>https://sfdevs.com/posts/2018-11-30-aligned-dev-incrementally-moving-to-trunk-based-development-and-ci/</link>
+      <pubDate>Fri, 30 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2018-11-30-aligned-dev-incrementally-moving-to-trunk-based-development-and-ci/</guid>
+      <description>Incrementally Moving to Trunk Based Development and Continuous Integration - Part One Backstory I was eating lunch a few weeks ago and the leader of development at the company I was on contract for, sat down and asked me how things were going. I had just spent a lot of time merging from our Dev branch to our Main branch. We started talking and I was attempting to extoll the virtues of trunk based development and feature flags.</description>
+    </item>
+    
+    <item>
+      <title>Fixing Redis background-save issues on Docker</title>
+      <link>https://sfdevs.com/posts/2018-11-04-phly-boy-phly-matthew-weier-o-phinney-fixing-redis-background-save-issues-on-docker/</link>
+      <pubDate>Sun, 04 Nov 2018 13:52:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2018-11-04-phly-boy-phly-matthew-weier-o-phinney-fixing-redis-background-save-issues-on-docker/</guid>
+      <description>I&amp;rsquo;ve been running redis in Docker for a number of sites, to perform things such as storing session data, hubot settings, and more.
+I recently ran into a problem on one of my systems where it was reporting:
+Can&#39;t save in background: fork: Out of memory  A quick google search showed this is a common error, so much so that there is an official FAQ about it. The solution is to toggle the /proc/sys/vm/overcommit_memory to 1.</description>
+    </item>
+    
+    <item>
+      <title>Building a usable ext-tidy for Alpine-based PHP Docker images</title>
+      <link>https://sfdevs.com/posts/2018-11-01-phly-boy-phly-matthew-weier-o-phinney-building-a-usable-ext-tidy-for-alpine-based-php-docker-images/</link>
+      <pubDate>Thu, 01 Nov 2018 22:23:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2018-11-01-phly-boy-phly-matthew-weier-o-phinney-building-a-usable-ext-tidy-for-alpine-based-php-docker-images/</guid>
+      <description>I&amp;rsquo;ve been working on building PHP Docker images for the purposes of testing, as well as to potentially provide images containing the Swoole extension. This is generally straight-forward, as the official PHP images are well-documented.
+This week, I decided to see if I could build Alpine-based images, as they can greatly reduce the final image size. And I ran into a problem.
+One of the test-beds I use builds RSS and Atom feeds using zend-feed.</description>
+    </item>
+    
+    <item>
+      <title>My Developer Manifesto</title>
+      <link>https://sfdevs.com/posts/2018-10-31-aligned-dev-my-developer-manifesto/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2018-10-31-aligned-dev-my-developer-manifesto/</guid>
+      <description>My Developer Manifesto I was inspired by the Rugged Software Development Manifesto and decided to make my own Manifesto or &amp;ldquo;public declaration of policy and aims&amp;rdquo; as defined in the dictionary. I will Work with integrity and honesty Share as quickly as I can when issues arise (estimates are off, things going wrong, other concerns) Share my ideas and opinions with boldness but humility, recognizing that there is much I don&amp;rsquo;t know and others are intelligent Seek feedback, accept it and know that working together improves the system and outcomes Work for the company global business goals and ask why Remember that I&amp;rsquo;m working to solve problems and challenges, not just to write code Productivity does not mean just sitting at a keyboard writing code Work towards breaking down communication barriers between teams Seek to make data driven decisions and rapidly incorporate user feedback Work in small batch sizes and limit Work In Progress (WIP) Since I know I can&amp;rsquo;t think of everything and remember everything I will write tests for what needs to be tests Work in smaller pieces with TDD when it makes sense Document what needs to be document and strive for an up-to-date representation of the system Never stop learning Use the right tools for the job for the right rules Consider maintainability Consider security (Shift left) Push for continuous improvement Share learnings and strive a generative/learning culture Lead by example, follow with humility Strive to put my family and people before my desires and career</description>
+    </item>
+    
+    <item>
+      <title>Talk: Systematic Debugging @ SDCC Fall 2019</title>
+      <link>https://sfdevs.com/posts/2018-10-24-shellrunner-talk-systematic-debugging-sdcc-fall-2019/</link>
+      <pubDate>Wed, 24 Oct 2018 15:52:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2018-10-24-shellrunner-talk-systematic-debugging-sdcc-fall-2019/</guid>
+      <description>Our own South Dakota Code Camp is coming up soon, and I&amp;rsquo;ll be speaking again. On October 27th, I&amp;rsquo;ll be giving a talk about my approach to debugging software, applications, and operations. The talk, Systematic Debugging is in the day&amp;rsquo;s last session and will be fairly high-level with a few nuggets for experienced programmers sprinkled in as well. Code Camp is at Raven Industries this year, and as always it is free to attend.</description>
+    </item>
+    
+    <item>
+      <title>Submit a job</title>
+      <link>https://sfdevs.com/jobs/submit/</link>
+      <pubDate>Sun, 07 Oct 2018 15:17:51 -0500</pubDate>
+      
+      <guid>https://sfdevs.com/jobs/submit/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
