@@ -2,12 +2,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://sfdevs.com/posts/</loc>
-    <lastmod>2019-04-17T16:58:00+00:00</lastmod>
+    <loc>https://sfdevs.com/posts/list/</loc>
+    <lastmod>2019-04-13T00:00:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sfdevs.com/posts/list/</loc>
+    <loc>https://sfdevs.com/posts/</loc>
     <lastmod>2019-04-13T00:00:00-05:00</lastmod>
   </url>
   
@@ -20,11 +20,6 @@
     <loc>https://sfdevs.com/events/</loc>
     <lastmod>2019-04-09T14:48:47-05:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sfdevs.com/jobs/</loc>
-    <lastmod>2019-04-03T12:26:12-05:00</lastmod>
   </url>
   
   <url>
@@ -68,12 +63,18 @@
   </url>
   
   <url>
-    <loc>https://sfdevs.com/jobs/submit/</loc>
-    <lastmod>2018-10-07T15:17:51-05:00</lastmod>
+    <loc>https://sfdevs.com/jobs/</loc>
+    <lastmod>2018-10-07T20:51:23-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://sfdevs.com/about/</loc>
+    <lastmod>2018-10-07T15:17:51-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sfdevs.com/jobs/submit/</loc>
+    <lastmod>2018-10-07T15:17:51-05:00</lastmod>
   </url>
   
 </urlset>
