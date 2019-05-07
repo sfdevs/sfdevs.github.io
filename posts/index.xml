@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Managing Multiple PHP versions via the ondrej/php PPA</title>
+      <link>https://sfdevs.com/posts/2019-05-01-phly-boy-phly-matthew-weier-o-phinney-managing-multiple-php-versions-via-the-ondrej-php-ppa/</link>
+      <pubDate>Wed, 01 May 2019 17:00:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/2019-05-01-phly-boy-phly-matthew-weier-o-phinney-managing-multiple-php-versions-via-the-ondrej-php-ppa/</guid>
+      <description>Last week, I did some system updates, and then decided to compile the most recent PHP releases. I&amp;rsquo;ve used phpbrew to manage multiple PHP releases for a number of years, and having it install a new version is fairly routine.
+Except this time, it wasn&amp;rsquo;t. Due to updates I installed, I was getting errors first with compiling the GD extension, then with ext-intl:
+ If you want Freetype support in ext-gd, you are expected to install the package libfreetype-dev.</description>
+    </item>
+    
+    <item>
       <title>From Zend Framework To The Laminas Project</title>
       <link>https://sfdevs.com/posts/2019-04-17-phly-boy-phly-matthew-weier-o-phinney-from-zend-framework-to-the-laminas-project/</link>
       <pubDate>Wed, 17 Apr 2019 16:58:00 +0000</pubDate>

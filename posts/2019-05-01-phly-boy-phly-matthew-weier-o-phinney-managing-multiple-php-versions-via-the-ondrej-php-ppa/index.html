@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>SFDevs  | Managing Multiple PHP versions via the ondrej/php PPA</title>
+<meta name="description" content="Last week, I did some system updates, and then decided to compile the most recent PHP releases. I&rsquo;ve used phpbrew to manage multiple PHP releases for a number of years, and having it install a new version is fairly routine.
+Except this time, it wasn&rsquo;t. Due to updates I installed, I was getting errors first with compiling the GD extension, then with ext-intl:
+ If you want Freetype support in ext-gd, you are expected to install the package libfreetype-dev.">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="generator" content="Hugo 0.55.5" />
+<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/solid.js" integrity="sha384-IA6YnujJIO+z1m4NKyAGvZ9Wmxrd4Px8WFqhFcgRmwLaJaiwijYgApVpo1MV8p77" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/brands.js" integrity="sha384-rUOIFHM3HXni/WG5pzDhA1e2Js5nn4bWudTYujHbbI9ztBIxK54CL4ZNZWwcBQeD" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js" integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS" crossorigin="anonymous"></script>
+
+
+
+
+<link rel="stylesheet" href="/styles/main.b8186dec878e18853a059792b7bd6cc35a21a0505c9c9dfdd756851c89f3ef30.css" integrity="sha256-uBht7IeOGIU6BZeSt71sw1ohoFBcnJ3911aFHInz7zA=">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6cc091">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#6cc091"><meta property="og:title" content="Managing Multiple PHP versions via the ondrej/php PPA" />
+<meta property="og:description" content="Last week, I did some system updates, and then decided to compile the most recent PHP releases. I&rsquo;ve used phpbrew to manage multiple PHP releases for a number of years, and having it install a new version is fairly routine.
+Except this time, it wasn&rsquo;t. Due to updates I installed, I was getting errors first with compiling the GD extension, then with ext-intl:
+ If you want Freetype support in ext-gd, you are expected to install the package libfreetype-dev." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sfdevs.com/posts/2019-05-01-phly-boy-phly-matthew-weier-o-phinney-managing-multiple-php-versions-via-the-ondrej-php-ppa/" />
+<meta property="article:published_time" content="2019-05-01T17:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-05-01T17:00:00&#43;00:00"/>
+
+  <meta property="fb:app_id" content="1171673062996168" />
+
+<meta itemprop="name" content="Managing Multiple PHP versions via the ondrej/php PPA">
+<meta itemprop="description" content="Last week, I did some system updates, and then decided to compile the most recent PHP releases. I&rsquo;ve used phpbrew to manage multiple PHP releases for a number of years, and having it install a new version is fairly routine.
+Except this time, it wasn&rsquo;t. Due to updates I installed, I was getting errors first with compiling the GD extension, then with ext-intl:
+ If you want Freetype support in ext-gd, you are expected to install the package libfreetype-dev.">
+
+
+<meta itemprop="datePublished" content="2019-05-01T17:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-05-01T17:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1447">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Managing Multiple PHP versions via the ondrej/php PPA"/>
+<meta name="twitter:description" content="Last week, I did some system updates, and then decided to compile the most recent PHP releases. I&rsquo;ve used phpbrew to manage multiple PHP releases for a number of years, and having it install a new version is fairly routine.
+Except this time, it wasn&rsquo;t. Due to updates I installed, I was getting errors first with compiling the GD extension, then with ext-intl:
+ If you want Freetype support in ext-gd, you are expected to install the package libfreetype-dev."/>
+<meta name="twitter:site" content="@_sfdevs"/>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-89597259-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '1171673062996168',
+        cookie     : true,
+        xfbml      : true,
+        version    : 'v3.2'
+      });
+      FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+<body class="subpage"><header id="header">
+    <div class="inner">
+        <a href="https://sfdevs.com/" class="logo">SFDevs</a>
+        <nav id="nav" role="menu">
+        
+        
+            <a class="" href="/about/">
+                <span>About</span>
+            </a>
+        
+            <a class="" href="/posts/">
+                <span>Community Posts</span>
+            </a>
+        
+            <a class="" href="/jobs/">
+                <span>Jobs</span>
+            </a>
+        
+        </nav>
+        <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+    </div>
+</header>
+
+<section class="wrapper">
+    <div class="inner">
+    <header class="align-center">
+        <h1>Managing Multiple PHP versions via the ondrej/php PPA</h1>
+    </header>
+
+    
+
+<p>Last week, I did some system updates, and then decided to compile the most
+recent PHP releases. I&rsquo;ve used <a href="https://phpbrew.github.io/phpbrew/">phpbrew</a> to
+manage multiple PHP releases for a number of years, and having it install a new
+version is fairly routine.</p>
+
+<p>Except this time, it wasn&rsquo;t. Due to updates I installed, I was getting errors
+first with compiling the GD extension, then with ext-intl:</p>
+
+<p><li>
+<p>If you want Freetype support in ext-gd, you are expected to install the
+package libfreetype-dev. On Ubuntu, this now installs libfreetype6-dev, which
+no longer includes the <code>freetype-config</code> binary that PHP&rsquo;s <code>configure</code> script
+uses to determine what features it supports.</p>
+</li>
+<li>
+<p>Similarly, ext-intl depends on the package libicu-dev. Ubuntu&rsquo;s package now
+omits the <code>icu-config</code> binary used by PHP to determine feature support.</p>
+</li></p>
+
+<p>I searched for quite some time to find packages that would resolve these
+problems. I could have found the source code and compiled it and linked to that,
+but that would mean keeping that up-to-date on top of my PHP installs.</p>
+
+<p>I even looked in the <a href="https://deb.sury.org/">ondrej/php PPA</a>, as that repository
+has multiple PHP versions already, including source packages.</p>
+
+<p>And then I thought: why not try using those instead of phpbrew?</p>
+
+<p>The rest of this post is how I made that work.</p>
+
+<blockquote>
+<p><p>I use Ubuntu for my operating system. The instructions I present here should
+work on any Debian-based system, but your mileage may vary. If you are using
+an RPM-based system, <code>yum</code> will be your friend, but I have no idea how to add
+repositories in that system, nor if <code>update-alternatives</code> is available. As
+such, these instructions may or may not help you.</p>
+Which is okay. I mainly wrote them to help future me.</p>
+</blockquote>
+
+<h2 id="register-the-ppa">Register the PPA</h2>
+
+<p>First, I had to add the PPA to the system:</p>
+
+<pre><code>$ sudo add-apt-repository ppa:ondrej/ppa
+
+</code></pre>
+
+<p>Then the usual:</p>
+
+<pre><code>$ sudo apt update
+
+</code></pre>
+
+<h2 id="approach-to-installation">Approach to installation</h2>
+
+<p>I first identified the extensions I typically install, matched them to
+packages in the PPA, and made a list. I knew I&rsquo;d be installing the same
+extensions across all PHP versions I wanted, so I figured I could script it a
+bit.</p>
+
+<p>From there, I executed the following from the CLI:</p>
+
+<pre><code>$ for VERSION in 5.6 7.0 7.1 7.2 7.3;do
+for&amp;gt; for EXTENSION in {listed all extensions here};do
+for for&amp;gt; sudo apt install php${VERSION}-${EXTENSION}
+for for&amp;gt; done
+for&amp;gt; done
+
+</code></pre>
+
+<p>This grabbed and installed each PHP I needed along with all extensions I wanted.</p>
+
+<h2 id="switching-between-versions">Switching between versions</h2>
+
+<p>To switch between versions, you have two options:</p>
+
+<p><li>
+Use the version-specific binaries: <code>/usr/bin/php5.6</code>, <code>/usr/bin/php7.0</code>, etc.
+</li>
+<li>
+Set a default via <code>update-alternatives</code>:
+<pre><code class="language-bash">$ sudo update-alternatives &ndash;set php /usr/bin/php5.6
+</code></pre>
+If you&rsquo;re not sure what you have installed, use:
+<pre><code class="language-bash">$ sudo update-alternatives &ndash;config php
+</code></pre>
+which will give you a listing, and an ability to select the one to use.
+</li></p>
+
+<h3 id="rootless-alternatives">Rootless alternatives</h3>
+
+<p>What if you&rsquo;d rather not be root to switch the default version, though?
+Fortunately, <code>update-alternatives</code> allows specifying alternate config and admin
+directories.</p>
+
+<p>Define the following alias in your shell&rsquo;s configuration:</p>
+
+<pre><code>alias update-my-alternatives='update-alternatives \
+ --altdir ~/.local/etc/alternatives \
+ --admindir ~/.local/var/lib/alternatives'
+
+</code></pre>
+
+<p>Additionally, make sure you add <code>$HOME/.local/bin</code> to your <code>$PATH</code>; since
+defining <code>$PATH</code> varies based on the shell you use, I&rsquo;ll leave that for you to
+accomplish.</p>
+
+<p>If you open a new shell, the alias will now be available; alternately, source
+the file in which you defined it to have it take effect immediately.</p>
+
+<p>Once you&rsquo;ve done that, you can run the following, based on the PHP versions
+you&rsquo;ve installed:</p>
+
+<pre><code>$ for VERSION in 5.6 7.0 7.1 7.2 7.3;do
+for&amp;gt; update-my-alternatives --install $HOME/.local/bin/php php /usr/bin/php${VERSION} ${VERSION//./0}
+for&amp;gt; done
+
+</code></pre>
+
+<p>This will create alternatives entries local to your own user, prioritizing them
+by version; as a result, the default, auto-selected version will be the most
+recently installed.</p>
+
+<p>You can verify this by running <code>update-my-alternatives --config php</code>:</p>
+
+<pre><code>There are 5 choices for the alternative php (providing $HOME/.local/bin/php).
+
+  Selection    Path             Priority   Status
+------------------------------------------------------------
+* 0            /usr/bin/php7.3   703       auto mode
+  1            /usr/bin/php5.6   506       manual mode
+  2            /usr/bin/php7.0   700       manual mode
+  3            /usr/bin/php7.1   701       manual mode
+  4            /usr/bin/php7.2   702       manual mode
+  5            /usr/bin/php7.3   703       manual mode
+
+Press &amp;lt;enter&amp;gt; to keep the current choice[*], or type selection number:
+
+</code></pre>
+
+<p>To switch between versions using the alias:</p>
+
+<p><li>
+Switch to a specific, known version:
+<pre><code class="language-bash">$ update-my-alternatives &ndash;set php /usr/bin/php{VERSION}
+</code></pre>
+</li>
+<li>
+Switch back to the default version (version with highest priority):
+<pre><code class="language-bash">$ update-my-alternatives &ndash;auto php
+</code></pre>
+</li>
+<li>
+List available versions:
+<pre><code class="language-bash">$ update-my-alternatives &ndash;list php
+</code></pre>
+</li>
+<li>
+Interactively choose a version when you&rsquo;re not sure what&rsquo;s available:
+<pre><code class="language-bash">$ update-my-alternatives &ndash;config php
+</code></pre>
+</li></p>
+
+<blockquote>
+<p>The above was cobbled together from:
+<ul>
+- <a href="https://serverfault.com/a/811377">https://serverfault.com/a/811377</a>
+- <a href="https://williamdemeo.github.io/linux/update-alternatives.html">https://williamdemeo.github.io/linux/update-alternatives.html</a>
+</ul></p>
+</blockquote>
+
+<h2 id="pecl">PECL</h2>
+
+<p>Compiling and installing your own extensions turns out to be a bit of a pain
+when you have multiple PHP versions installed, mainly because there is exactly
+one PECL binary installed.</p>
+
+<p>First, you need to install a few packages, including the one containing PEAR
+(PECL uses the PEAR installer), and the development packages for each PHP
+version you use (as those contain the tools necessary to compile extensions,
+including <code>phpize</code> and <code>php-config</code>):</p>
+
+<pre><code>$ sudo apt install php-pear
+$ for VERSION in 5.6 7.0 7.1 7.2 7.3;do
+for&amp;gt; sudo apt install php${VERSION}-dev
+for&amp;gt; done
+
+</code></pre>
+
+<h3 id="compiling-extensions">Compiling extensions</h3>
+
+<p>From there, you need to:</p>
+
+<ol>
+<li>Ensure the correct <code>phpize</code> and <code>php-config</code> are selected.</li>
+<li>Install the extension.</li>
+<li>Tell PECL to deregister the extension in its own registry.</li>
+</ol>
+
+<p>Normally, you would accomplish the first point by doing the following:</p>
+
+<pre><code>$ sudo update-alternatives --set php /usr/bin/php7.3
+$ sudo update-alternatives --set php-config /usr/bin/php-config7.3
+$ sudo update-alternatives --set phpize /usr/bin/phpize7.3
+
+</code></pre>
+
+<blockquote>
+<p><p>Note that the above is <strong>not</strong> using the <code>update-my-alternatives</code> alias
+detailed in the previous section. This is because extensions must be installed
+at the <strong>system</strong> level.</p>
+That said, the above won&rsquo;t be necessary, as I detail below.</p>
+</blockquote>
+
+<p>However, PECL now has a really nice configuration flag, <code>php_suffix</code>, that
+allows specifying a string <em>to append to each of the php, phpize, and php-config
+binary names</em>. So, for example, if I specify <code>pecl -d php_suffix=7.3</code>, the
+string <code>7.3</code> will be appended to those, so that they become <code>php7.3</code>,
+<code>phpize7.3</code>, and <code>php-config7.3</code>, respectively. This ensures that the correct
+scripts are called during the build process, and that the extension is installed
+to the correct location.</p>
+
+<p>As for the last point in that numbered list, it&rsquo;s key to being able to install
+an extension in multiple PHP versions; otherwise, each subsequent attempt, even
+when using a different PHP version, will result in PECL indicating it&rsquo;s already
+installed. The <code>-r</code> switch tells PECL to remove the package from its own
+registry, <strong>but not to remove any build artifacts</strong>.</p>
+
+<p>As a complete example:</p>
+
+<pre><code>$ sudo pecl -d install php_suffix=7.3 swoole &amp;amp;&amp;amp; sudo pecl uninstall -r swoole
+
+</code></pre>
+
+<h3 id="registering-extensions">Registering extensions</h3>
+
+<p>From there, you still have to register, and optionally configure, the extension.
+To do this, drop a file named after the extension in
+<code>/etc/php/${PHP_VERSION}/mods-available/${EXTENSION}.ini</code>, with the following
+contents:</p>
+
+<pre><code>; configuration for php ${EXTENSION} module
+; priority=20
+extension=${EXTENSION}.so
+
+</code></pre>
+
+<p>Now that this is in place, enable it:</p>
+
+<pre><code>$ sudo phpenmod -v ${PHP_VERSION} -s cli ${EXTENSION}
+
+</code></pre>
+
+<p>(To disable it, use <code>phpdismod</code> instead.)</p>
+
+<h2 id="thoughts">Thoughts</h2>
+
+<p>When thinking in terms of phpbrew:</p>
+
+<p><li>
+<p>Like <code>phpbrew</code>, you can temporarily choose an alternative PHP binary
+by simply referring to its path. With <code>phpbrew</code>, this would be something like
+<code>~/.phpbrew/php/php-{PHP_VERSION}/bin/php</code>. With the ondrej PPA, it becomes
+<code>/usr/bin/php{PHP_MINOR_VERSION}</code>. (E.g. <code>~/.phpbrew/php/php-7.2.36/bin/php</code>
+would become just <code>/usr/bin/php7.2</code>.)</p>
+</li>
+<li>
+<p>There is no equivalent to <code>phpbrew use</code>. That feature would change the symlink
+only for the duration of the current terminal session. Opening a new terminal
+session would revert to the previous selection. With <code>update-alternatives</code>,
+it&rsquo;s all or nothing. I mainly used <code>phpbrew use</code> to ensure my default PHP did
+not change in case I forgot to call it again.</p>
+</li>
+<li>
+<p>Usage of <code>update-alternatives</code> is more like <code>phpbrew switch</code>, as it affects
+both the current and all later terminal sessions. Once switched, that selection
+is in use until you switch it again. This means I have to remember to switch
+to my default version. However, it&rsquo;s relatively easy to add a line to my shell
+profile to call <code>update-my-alternatives --auto php</code>.</p>
+</li></p>
+
+<p>Basically, if you can use the binary directly, but don&rsquo;t want to use that one as
+your default, refer to it by absolute path. If you are using a command that will
+use the current environment&rsquo;s PHP, use <code>update-my-alternatives</code> to switch PHP
+versions first.</p>
+
+<p>The other issue I see is that if I want to test against a <strong>specific</strong> PHP
+version, I&rsquo;ll still need to compile it myself — which leads me back to the
+original problem that led me here in the first place. I&rsquo;ll cross that bridge
+when I get to it. Until then, I have a workable solution — and finally a
+single document I can refer to when I need to remember again at a later date,
+instead of cobbling it together from multiple sources!</p>
+
+<h3 id="updates">Updates</h3>
+
+<ul>
+<li>2019-05-01: added breakpoint so that full post is not presented in lists.</li>
+</ul>
+
+    </div>
+</section>
+<footer id="footer">
+    <div class="inner">
+        <h3>Get in touch</h3>
+
+        <iframe src="https://services.cognitoforms.com/f/kLQF89okA06rKO0JYMWNOg?id=1" style="position:relative;width:1px;min-width:100%;*width:100%;" frameborder="0" scrolling="yes" seamless="seamless" height="465" width="100%"></iframe>
+        <script src="https://services.cognitoforms.com/scripts/embed.js"></script>
+
+        <div class="copyright">
+            &copy; 2019 Sioux Falls Developer's Group.
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+<script src="/js/skel.min.js"></script>
+<script src="/js/main.min.js"></script>
+</body>
+</html>
