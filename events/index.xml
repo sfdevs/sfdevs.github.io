@@ -6,10 +6,21 @@
     <description>Recent content in Events on SFDevs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 May 2019 08:22:51 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 May 2019 14:48:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sfdevs.com/events/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Getting Started with Unit Testing Workshop (2 of 2)</title>
+      <link>https://sfdevs.com/events/getting-started-with-unit-testing-workshop-2-of-2-261680554/</link>
+      <pubDate>Wed, 22 May 2019 14:48:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/events/getting-started-with-unit-testing-workshop-2-of-2-261680554/</guid>
+      <description>Join Omnitech Software Engineer Kevin Logan for part TWO of a lunch-hour dive into Unit Testing.
+The combined talks will include a short introduction to unit testing in general, along with some hands-on-keyboard work following Kevin with C# MVC API unit tests. The lessons will be broadly applicable to unit testing in general, including other programming languages.
+The second meeting will give us time to talk about experiences and look into integration testing in .</description>
+    </item>
     
     <item>
       <title>Getting Started with Unit Testing Workshop (1 of 2)</title>
