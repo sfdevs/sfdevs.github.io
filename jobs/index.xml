@@ -15,27 +15,27 @@
   <id>https://sfdevs.com/jobs/</id>
     
   <entry>
-    <title>Software Engineer</title>
-    <link href="https://sfdevs.com/jobs/software-engineer-omnitech-1/"/>
-    <id>https://sfdevs.com/jobs/software-engineer-omnitech-1/</id>
-    <updated>Fri, 15 Mar 2019 16:20:05 -0500</updated>
-    <summary>Omnitech is looking to add dedicated, eager, open-minded engineers to our Sioux Falls and Rapid City locations. Omnitech works with companies of all sizes, capabilities, and industries which including banking, medical and manufacturing. The one constant: investment in technology is critical to their business growth.</summary>
-  </entry>
-    
-  <entry>
-    <title>Database Developer</title>
-    <link href="https://sfdevs.com/jobs/database-developer-carsforsale-2/"/>
-    <id>https://sfdevs.com/jobs/database-developer-carsforsale-2/</id>
-    <updated>Wed, 22 May 2019 09:39:35 -0500</updated>
-    <summary>The Carsforsale.com team is currently concentrated on scaling web products that reach millions of car buyers and launching cutting-edge web and mobile applications. This position will involve database design and development of solutions and implementing a deliberate architecture for data integration and data movement across the organization.</summary>
-  </entry>
-    
-  <entry>
-    <title>.Net Developer</title>
+    <title>.Net Developer - Blend Interactive</title>
     <link href="https://sfdevs.com/jobs/dotnet-developer-blend-1/"/>
     <id>https://sfdevs.com/jobs/dotnet-developer-blend-1/</id>
+    <published>Wed, 12 Jun 2019 00:00:00 -0500</published>
     <updated>Sun, 16 Jun 2019 12:46:55 -0500</updated>
-    <summary>Long story short, this is what we look for in our .NET developers: In addition to the server-side language, we need someone who loves to code and knows HTML, Javascript, CSS, and jQuery. We need someone who can take ideas and turn them into clean, solid code. Someone who can grasp the big picture while still getting the details right. Someone who can turn out great websites without losing their sense of humor. You’re out there. We know it.</summary>
+  </entry>
+    
+  <entry>
+    <title>Database Developer - Carsforsale.com</title>
+    <link href="https://sfdevs.com/jobs/database-developer-carsforsale-2/"/>
+    <id>https://sfdevs.com/jobs/database-developer-carsforsale-2/</id>
+    <published>Mon, 20 May 2019 00:00:00 -0600</published>
+    <updated>Wed, 22 May 2019 09:39:35 -0500</updated>
+  </entry>
+    
+  <entry>
+    <title>Software Engineer - Omnitech</title>
+    <link href="https://sfdevs.com/jobs/software-engineer-omnitech-1/"/>
+    <id>https://sfdevs.com/jobs/software-engineer-omnitech-1/</id>
+    <published>Thu, 14 Mar 2019 00:00:00 -0500</published>
+    <updated>Fri, 15 Mar 2019 16:20:05 -0500</updated>
   </entry>
     
 </feed>
