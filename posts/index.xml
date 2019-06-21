@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Using Git Inside of TFVC</title>
+      <link>https://sfdevs.com/posts/external_posts/2019-06-12-aligned-dev-using-git-inside-of-tfvc/</link>
+      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sfdevs.com/posts/external_posts/2019-06-12-aligned-dev-using-git-inside-of-tfvc/</guid>
+      <description>Using Git inside of TFVC I&amp;rsquo;ve written about how I &amp;ldquo;like git over TFVC&amp;rdquo; recently. We can&amp;rsquo;t always change things and it&amp;rsquo;s not always wise to do so. I&amp;rsquo;ve found that I can still use Git locally to have the goodies of Git (a history of commits, branches, stashing, fast switching between branches). This is especially useful for long running changesets (I know you&amp;rsquo;re not supposed to have those, but you can&amp;rsquo;t change everything).</description>
+    </item>
+    
+    <item>
       <title>Managing Multiple PHP versions via the ondrej/php PPA</title>
       <link>https://sfdevs.com/posts/external_posts/2019-05-01-phly-boy-phly-matthew-weier-o-phinney-managing-multiple-php-versions-via-the-ondrej-php-ppa/</link>
       <pubDate>Wed, 01 May 2019 17:00:00 +0000</pubDate>
@@ -121,15 +130,6 @@ That said, just as with any desktop environment, I&amp;rsquo;ve still run into p
       
       <guid>https://sfdevs.com/posts/external_posts/2018-12-19-harmstyler-avoiding-route-collision-in-ez-platform/</guid>
       <description>eZ Platform boils down to a set of Symfony bundles that give you a nice way of managing content for your users. With these bundles, eZ reserves some routing paths for internal or admin use, paths that you might want for your own app. If you ever run across a path you want to use for your app, and not break an internal eZ feature, there is a simple solution: change the path config.</description>
-    </item>
-    
-    <item>
-      <title>Incrementally Moving to Trunk Based Development and CI - Part Two</title>
-      <link>https://sfdevs.com/posts/external_posts/2018-12-07-aligned-dev-incrementally-moving-to-trunk-based-development-and-ci-part-two/</link>
-      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://sfdevs.com/posts/external_posts/2018-12-07-aligned-dev-incrementally-moving-to-trunk-based-development-and-ci-part-two/</guid>
-      <description>Incrementally Moving to Trunk Based Development and CI - Part Two In Part One I laid out my thoughts on Trunk Based Development (TBD) and how it interacts with aspects of DevOps, Automation, Separation of concerns, Clean Architecture and more. Here are some questions you might ask, a hypothetical and resources to reference. What about X? I&amp;rsquo;m sure there are a lot of questions floating around in your head. &amp;ldquo;Why should I change my process?</description>
     </item>
     
     <item>
