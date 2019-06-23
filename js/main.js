@@ -75,7 +75,7 @@
 
     var shareLinks = document.querySelectorAll('.share-link');
     if (shareLinks.length) {
-        for(var i = 0; i <= shareLinks.length; i++) {
+        for(var i = 0; i < shareLinks.length; i++) {
             shareLinks[i].addEventListener('click', function(e){
                 e.preventDefault();
                 var $this = $(this);
