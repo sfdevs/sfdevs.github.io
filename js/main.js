@@ -32,23 +32,22 @@
             });
         }
     }
-})(jQuery);
+    var disableCognitoLink = function() {
+        var cognitoLinks = document.querySelectorAll('.cognito a');
+        var searchText = "Powered by Cognito Forms";
 
-function disableCognitoLink() {
-    var cognitoLinks = document.querySelectorAll('.cognito a');
-    var searchText = "Powered by Cognito Forms";
-
-    for (var i = 0; i < cognitoLinks.length; i++) {
-        if (cognitoLinks[i].textContent.indexOf(searchText) > -1) {
-            cognitoLinks[i].style.display = 'none';
-            cognitoLinks[i].classList.add('d-none');
+        for (var i = 0; i < cognitoLinks.length; i++) {
+            if (cognitoLinks[i].textContent.indexOf(searchText) > -1) {
+                cognitoLinks[i].style.display = 'none';
+                cognitoLinks[i].classList.add('d-none');
+            }
         }
     }
-}
 
-window.addEventListener('load', function() {
-    disableCognitoLink();
-    if (Cognito) {
-        document.addEventListener('Cognito.ready', disableCognitoLink);
-    }
-});
+    window.addEventListener('load', function() {
+        disableCognitoLink();
+        if (Cognito) {
+            document.addEventListener('Cognito.ready', disableCognitoLink);
+        }
+    });
+})(jQuery);
