@@ -32,7 +32,7 @@
             });
         }
     }
-    var disableCognitoLink = function() {
+    var disableCognitoLink = function () {
         var cognitoLinks = document.querySelectorAll('.cognito a');
         var searchText = "Powered by Cognito Forms";
 
@@ -44,9 +44,33 @@
         }
     }
 
-    window.addEventListener('load', function() {
+    var fixCognitoForm = function () {
+        var formGroups = document.querySelectorAll('.c-field');
+        var input, inputs, textArea;
+        for (var i = 0; i < formGroups.length; i++) {
+            var formGroup = formGroups[i];
+            formGroup.classList.add('form-group');
+            inputs = formGroup.querySelectorAll('input');
+            if (inputs) {
+                for (var j = 0; j < inputs.length; j++) {
+                    input = inputs[j];
+                    input.classList.add('form-control');
+                    input.style.fontSize = '16px';
+                }
+            }
+            textArea = formGroup.querySelector('textarea');
+            if (textArea) {
+                textArea.classList.add('form-control');
+                textArea.style.fontSize = '16px';
+            }
+        }
+    }
+
+    window.addEventListener('load', function () {
+        fixCognitoForm();
         disableCognitoLink();
         if (Cognito) {
+            document.addEventListener('Cognito.ready', fixCognitoForm);
             document.addEventListener('Cognito.ready', disableCognitoLink);
         }
     });
