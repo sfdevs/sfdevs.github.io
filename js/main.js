@@ -61,8 +61,10 @@
 
     const homepageBody = document.querySelector('.homepage');
     if (homepageBody) {
-        const ext = m.webp ? 'webp' : m.jpeg2000 ? 'jp2' : 'jpg';
-        homepageBody.style.backgroundImage = "url(/images/banner." + ext + ")";
+        document.addEventListener('DOMContentLoaded', function () {
+            const ext = m.webp ? 'webp' : m.jpeg2000 ? 'jp2' : 'jpg';
+            homepageBody.style.backgroundImage = "url(/images/banner." + ext + ")";
+        });
     }
 
     window.addEventListener('load', function () {
